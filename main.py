@@ -15,6 +15,10 @@ def get_items(item_id):
 def add_items():
     return "Items added"
 
+@app.route('/deleteitems/<int:item_id>', methods=['DELETE'])
+def delete_items(item_id):
+    return f"Given item {item_id} deleted"
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0",port=5000)
 
