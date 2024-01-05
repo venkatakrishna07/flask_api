@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-    return "Welcome Home"
+    return "Welcome Home Buddy"
 
 @app.route('/items/<int:item_id>', methods=['GET'])
 def get_items(item_id):
