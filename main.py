@@ -11,7 +11,6 @@ def get_items(item_id):
     res = {"itemId":item_id, "description":"This is the item description "}
     return res
 
-
 if __name__ == "__main__":
     app.run(debug=True)
 
