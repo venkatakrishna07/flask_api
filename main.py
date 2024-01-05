@@ -11,6 +11,10 @@ def get_items(item_id):
     res = {"itemId":item_id, "description":"This is the item description "}
     return res
 
+@app.route("/additems", methods=['POST'])
+def add_items():
+    return "Items added"
+
 if __name__ == "__main__":
     app.run(debug=True)
 
