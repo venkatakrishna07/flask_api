@@ -20,5 +20,5 @@ def delete_items(item_id):
     return f"Given item {item_id} deleted"
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0",port=5000)
+    app.run(debug=True, host="0.0.0.0",port=8501)
 
